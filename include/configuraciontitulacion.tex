@@ -32,7 +32,7 @@
 \definecolor{masterquimica}{RGB}{41,199,255}	% Quimica
 \definecolor{ciberseguridad}{RGB}{9,111,192}	% Ciberseguridad
 \definecolor{geologica}{RGB}{245,125,0}		% Ingeniería Geológica
-
+\definecolor{biomedica}{RGB}{210,180,240}   % Ingeniería Biomédica
 % Logotipos comunes de todas las titulaciones
 \newcommand{\logoFacultad}{include/logos-universidad/LogoEPSNegro}
 \newcommand{\logoUniversidad}{include/logos-universidad/LogoUANegro}
@@ -279,9 +279,19 @@
 		% Color
 		\newcommand{\colorgrado}{geologica}
 		\newcommand{\colortexto}{blanco}
+	\else \if\IDtitulo N % Ingeniería Biomédica
+		% Logos
+		\newcommand{\logoFacultadPortada}{include/logos-universidad/LogoEPSBlanco}
+		\newcommand{\logoGradoPortada}{include/logos-titulaciones/LogoBiomedicaColor}
+		\newcommand{\logoGrado}{include/logos-titulaciones/LogoBiomedicaNegro}
+		% Texto
+		\newcommand{\miGrado}{Grado en Ingeniería Biomédica}
+		\newcommand{\tipotrabajo}{Trabajo Fin de Grado}
+		% Color
+		\newcommand{\colorgrado}{biomedica}
+		\newcommand{\colortexto}{blanco}
 
-
-	\fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi
+	\fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi \fi
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 % ¿COMO AÑADIR MÁS TITULACIONES?
